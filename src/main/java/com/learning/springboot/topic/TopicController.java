@@ -26,4 +26,9 @@ public class TopicController {
     public Topic getTopic(@PathVariable String id) {
         return topicService.getTopic(id);
     }
+
+    @PostMapping("/topics")
+    public void saveTopic(@RequestBody Topic topic) {
+        topicService.addTopic(topic);
+    }
 }

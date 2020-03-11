@@ -20,4 +20,8 @@ public class TopicService {
     public Topic getTopic(String id) {
         return this.topics.stream().filter(t -> t.getId().equals(id)).findFirst().orElse(null);
     }
+
+    public void addTopic(Topic topic) {
+        this.topics.add(topic);
+    }
 }
