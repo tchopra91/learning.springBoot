@@ -26,6 +26,14 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+    compile "com.microsoft.sqlserver:mssql-jdbc"
+    compile "org.springframework:spring-jdbc"
+    compile "org.apache.commons:commons-dbcp2"
+    compile "org.apache.commons:commons-pool2"
+    compile "org.springframework:spring-orm"
+    compile "org.hibernate:hibernate-core"
+    compile "org.springframework.data:spring-data-jpa"
 }
 
 test {
